@@ -1,0 +1,8 @@
+version: '2'
+services:
+  julia-webserver:
+    build: .
+    ports:
+     - "8000:8000"
+    network_mode: host
+    container_name: julia-webserver
